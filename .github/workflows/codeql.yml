@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // Variáveis da Carta 1
+    char estado1;
+    string codigo1;
+    string cidade1;
+    int populacao1;
+    float area1;
+    float pib1;
+    int pontos1;
+
+    // Variáveis da Carta 2
+    char estado2;
+    string codigo2;
+    string cidade2;
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontos2;
+
+    // ======= Entrada de Dados =======
+    cout << "Cadastro da Carta 1\n";
+    cout << "Estado (A-H): ";
+    cin >> estado1;
+    cout << "Codigo da Carta (ex: A01): ";
+    cin >> codigo1;
+    cin.ignore(); // limpa buffer para permitir getline
+    cout << "Nome da Cidade: ";
+    getline(cin, cidade1);
+    cout << "Populacao: ";
+    cin >> populacao1;
+    cout << "Area (em km²): ";
+    cin >> area1;
+    cout << "PIB (em bilhoes de reais): ";
+    cin >> pib1;
+    cout << "Numero de Pontos Turisticos: ";
+    cin >> pontos1;
+
+    cout << "\nCadastro da Carta 2\n";
+    cout << "Estado (A-H): ";
+    cin >> estado2;
+    cout << "Codigo da Carta (ex: B02): ";
+    cin >> codigo2;
+    cin.ignore();
+    cout << "Nome da Cidade: ";
+    getline(cin, cidade2);
+    cout << "Populacao: ";
+    cin >> populacao2;
+    cout << "Area (em km²): ";
+    cin >> area2;
+    cout << "PIB (em bilhoes de reais): ";
+    cin >> pib2;
+    cout << "Numero de Pontos Turisticos: ";
+    cin >> pontos2;
+
+    // ======= Saída de Dados =======
+    cout << "\n=== Carta 1 ===\n";
+    cout << "Estado: " << estado1 << "\n";
+    cout << "Codigo: " << codigo1 << "\n";
+    cout << "Nome da Cidade: " << cidade1 << "\n";
+    cout << "Populacao: " << populacao1 << "\n";
+    cout << "Area: " << area1 << " km²\n";
+    cout << "PIB: " << pib1 << " bilhoes de reais\n";
+    cout << "Numero de Pontos Turisticos: " << pontos1 << "\n";
+
+    cout << "\n=== Carta 2 ===\n";
+    cout << "Estado: " << estado2 << "\n";
+    cout << "Codigo: " << codigo2 << "\n";
+    cout << "Nome da Cidade: " << cidade2 << "\n";
+    cout << "Populacao: " << populacao2 << "\n";
+    cout << "Area: " << area2 << " km²\n";
+    cout << "PIB: " << pib2 << " bilhoes de reais\n";
+    cout << "Numero de Pontos Turisticos: " << pontos2 << "\n";
+
+    return 0;
+}
